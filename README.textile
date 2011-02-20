@@ -1,0 +1,24 @@
+h1. Zanox Ruby API
+
+by Michel Pouleijn
+
+The zanox_api is the Ruby way to use the Zanox Webservice version 2009-07-01
+
+h2. Installation
+
+<pre>
+gem install zanox_api
+</pre>
+
+h2. Features
+
+Supported zanox API methods:
+
+|*zanox API method*|*the ruby way*|
+| getProgram | Zanox::Program.find('the program id here') |
+| getProgramsByAdspace | Zanox::Program.find(:adspaceId => 'your adspace id here') |
+| searchPrograms | Zanox::Program.find('amazon', :region=>'de') |
+| getProduct | Zanox::Product.find('the zupid of the product here') |
+| getProducts | Zanox::Product.find(:programId=>'program id is required here', :adspaceId=>'your adspace id here') |
+| searchProducts | Zanox::Product.find('ipad', :region=>'de', :programId=>'a program id here') |
+| getSales | Zanox::Sale.find(:date=>'2010-03-02T00:00:00', :dateType=>'trackingDate') |

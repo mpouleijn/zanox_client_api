@@ -1,0 +1,16 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    rake (0.8.7)
+    rcov (0.9.9)
+    rspec (1.3.0)
+    yard (0.6.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rake
+  rcov
+  rspec (= 1.3.0)
+  yard
