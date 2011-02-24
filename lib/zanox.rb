@@ -1,5 +1,8 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__)) unless $LOAD_PATH.include?(File.dirname(__FILE__))
 require 'rubygems'
+require "zanox/restful_methods"
+require "zanox/soap_methods"
+
 
 #
 # Zanox Api Client (ConnectId Version)
@@ -23,5 +26,9 @@ class Zanox
 
   def initialize(request_method)
     @request_method = request_method
+  end
+
+  def get_product(*args)
+    @request_method.get_product(*args)
   end
 end
