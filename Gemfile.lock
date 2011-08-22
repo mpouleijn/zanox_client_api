@@ -12,5 +12,5 @@ PLATFORMS
 DEPENDENCIES
   rake
   rcov
-  rspec (= 1.3.0)
+  rspec
   yard

@@ -1,7 +1,9 @@
-class SoapMethods
+module Zanox
+  class SoapMethods
 
-  def get_product(*args)
+    def get_product(*args)
+
+    end
 
   end
-
 end

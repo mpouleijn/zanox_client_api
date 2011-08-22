@@ -8,5 +8,5 @@ gem 'yard'
 
 group :test do
   gem 'rcov'
-  gem 'rspec', '1.3.0'
+  gem 'rspec'
 end

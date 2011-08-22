@@ -21,14 +21,31 @@ require "zanox/soap_methods"
 # @see          http://wiki.zanox.com/en/Web_Services
 # @see          http://apps.zanox.com
 #
-class Zanox
-  attr_accessor :request_method
+module Zanox
+  module API
+    attr_accessor :version
 
-  def initialize(request_method)
-    @request_method = request_method
+    def self.initialize
+      @version = '2011-03-01'
+    end
+
+    def get_version
+
+    end
   end
 
-  def get_product(*args)
-    @request_method.get_product(*args)
+  module Connect
+
   end
+
+  module Product
+
+  end
+
+  module Client
+    def self.version
+      File.read(File.dirname(__FILE__) + "/../VERSION").chomp
+    end
+  end
+
 end
