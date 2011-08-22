@@ -1,6 +1,6 @@
 module Zanox
   class RestfulMethods
-    attr_reader :response_format
+    attr_accessor :response_format
 
 
     def initialize(format = 'json')

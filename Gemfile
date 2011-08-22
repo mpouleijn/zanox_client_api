@@ -9,4 +9,7 @@ gem 'yard'
 group :test do
   gem 'rcov'
   gem 'rspec'
+  gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+  gem 'guard-rspec'
+  gem 'guard-bundler'
 end

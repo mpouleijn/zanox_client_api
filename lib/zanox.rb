@@ -38,13 +38,18 @@ module Zanox
 
   end
 
-  module Product
+  class Product
+    def initialize
+      puts "Product class om te kijken wat het doet"
+    end
 
   end
 
-  module Client
-    def self.version
-      File.read(File.dirname(__FILE__) + "/../VERSION").chomp
+  class Client
+    attr_reader :version
+
+    def initialize
+      @version = File.read(File.dirname(__FILE__) + "/../VERSION").chomp
     end
   end
 
